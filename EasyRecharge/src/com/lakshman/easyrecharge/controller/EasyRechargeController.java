@@ -1,5 +1,5 @@
 package com.lakshman.easyrecharge.controller;
 
-interface EasyRechargeController {
+public interface EasyRechargeController {
     void startEasyRechargeJourney();
 }
