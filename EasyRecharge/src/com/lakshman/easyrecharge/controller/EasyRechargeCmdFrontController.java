@@ -9,14 +9,13 @@ import java.math.BigDecimal;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+import static com.lakshman.easyrecharge.constant.EasyRechargeConstants.BALANCE_THRESHOLD;
+import static com.lakshman.easyrecharge.constant.EasyRechargeConstants.INVALID_INPUT;
+import static com.lakshman.easyrecharge.constant.EasyRechargeConstants.RECHARGE_SUCCESSFULLY;
+
 public class EasyRechargeCmdFrontController implements EasyRechargeController {
     private final Scanner scanner;
     private final EasyRecharge easyRecharge;
-
-    // common constants can externalized
-    private static final BigDecimal BALANCE_THRESHOLD = new BigDecimal("200");
-    private static final String INVALID_INPUT = "Invalid input..!!";
-    private static final String RECHARGE_SUCCESSFULLY = "Recharge successfully";
 
     public EasyRechargeCmdFrontController() {
         scanner =new Scanner(System.in);
